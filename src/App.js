@@ -34,19 +34,21 @@ function App() {
                   onChange={handleChange}/>
         </form>
       </div>
-      {filteredCoins.map(coin => {
-        return (
-          <Coin key={coin.id} 
-                image={coin.image} 
-                name={coin.name} 
-                symbol={coin.symbol}
-                price={coin.current_price}
-                volume={coin.total_volume}
-                priceChange={coin.price_change_percentage_24h}
-                marketCap={coin.market_cap}
-          />
-        )
-      })}
+      <div className='coin-container'>
+        {filteredCoins.map(coin => {
+          return (
+            <Coin key={coin.id} 
+                  image={coin.image} 
+                  name={coin.name} 
+                  symbol={coin.symbol}
+                  price={coin.current_price}
+                  volume={coin.total_volume}
+                  priceChange={coin.price_change_percentage_24h}
+                  marketCap={coin.market_cap}
+            />
+          )
+        })}
+      </div>
     </div>
   );
 }
