@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  // box-sizing: border-box;
   /* margin:0; */
   padding:0;
   background-color: #062f4f;
@@ -40,6 +40,11 @@
   /* background-color: #304158; */
   color:#fff;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  @media screen and (max-width: 600px){
+    width:20rem;
+    height:4rem;
+}
 }
 
 .coin-input:hover{
